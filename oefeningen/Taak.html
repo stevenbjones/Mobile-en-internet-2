@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="Taak.css">
+<script src="jquery.js"></script>
+    
+<script>
+
+    $( document ).ready(function() {
+    
+        
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        var img = document.getElementById("player");
+        ctx.drawImage(img, 458, 300, 150, 180);
+        
+        
+        
+        
+        /*
+        var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var imageObj = new Image();
+      imageObj.src = "player.png";    
+      imageObj.onload = function() {
+        context.drawImage(imageObj, 250, 30);
+      };
+      */
+    
+
+})
+    
+</script>    
+    
+</head>
+<body>
+<canvas id="myCanvas" width="1000" height="500">
+    <img src="player.PNG" alt="Smiley face" height="42" width="42" id="player">
+    </canvas>
+    
+</body>
+</html>
